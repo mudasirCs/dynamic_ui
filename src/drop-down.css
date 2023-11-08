@@ -1,0 +1,73 @@
+nav {
+  position: relative;
+}
+
+nav button {
+  position: relative;
+  border: none;
+  top: 0;
+  left: 20px;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: lightblue;
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav button:hover {
+  background-color: rgb(18, 75, 121);
+  color: white;
+}
+
+menu {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  margin: 0;
+  top: 100%;
+  left: 20px;
+  opacity: 0.1;
+  list-style-type: none;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  border-radius: 15px;
+  background-color: lightblue;
+  width: min-content;
+}
+
+*:hover.show {
+  opacity: 1;
+}
+
+menu li {
+  width: 150px;
+  border: 3px solid white;
+  border-radius: 10px;
+  opacity: 0.1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.transparent {
+  opacity: 0.3;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+menu li:hover {
+  background-color: rgb(18, 75, 121);
+  color: white;
+}
+
+menu li::selection {
+  color: gold;
+}
